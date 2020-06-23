@@ -1,0 +1,84 @@
+:root {
+  --mainWite: #f7f7ee;
+}
+
+body {
+  background: #eeeeee;
+}
+
+.img-container {
+  position: relative;
+  padding: 5rem 0.5rem;
+}
+
+.img {
+  transition: 1s all linear;
+  border-radius: 0.4rem;
+}
+
+.img-container:hover .img {
+  transform: scale(1.2);
+}
+
+.card-footer {
+  padding: 0rem !important;
+}
+
+.add-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  background: #8cba51;
+  color: var(--mainWite);
+  border: none;
+  margin: 1rem;
+  font-size: 1.5rem;
+  transition: 1s all ease-in-out;
+}
+
+.info-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  background: #8cba51;
+  color: var(--mainWite);
+  border: none;
+  margin: 1rem;
+  font-size: 1rem;
+  transition: 1s all ease-in-out;
+}
+
+.add-btn:hover,
+.info-btn:hover {
+  background: var(--mainWite);
+  color: #8cba51;
+}
+
+.add-btn:focus,
+.info-btn:focus {
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2rem);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.disp {
+  background: var(--mainWite);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+}
